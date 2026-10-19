@@ -3,117 +3,1041 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Brandi Enrietti is a clinical data scientist building trustworthy healthcare data products across data engineering, machine learning, and analytics.">
-  <title>Brandi Enrietti | Clinical Data Scientist</title>
+  <meta name="description" content="Brandi Enrietti is a healthcare data leader delivering end-to-end data architecture from clinical operations to enterprise cloud intelligence.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brandi Enrietti | Healthcare Data Leader & Clinical Data Scientist">
+  <meta property="og:description" content="Translating clinical complexity and healthcare economics into resilient, auditable data products and executive decisions.">
+  <meta property="og:url" content="https://benrietti.github.io/">
+
+  <title>Brandi Enrietti | Healthcare Data Leader</title>
+  
   <style>
-    :root{--ink:#172536;--muted:#596a7a;--blue:#2458a6;--teal:#087e82;--pale:#eff5f6;--line:#dce5e8;--white:#fff;--night:#102a36;--gold:#e6ad56}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f9fa;color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-    a{color:inherit} .wrap{width:min(1100px,calc(100% - 40px));margin:auto}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-    .brand{font-weight:800;letter-spacing:-.04em;text-decoration:none;font-size:1.05rem}.brand span{color:var(--teal)}
-    .navlinks{display:flex;gap:26px;align-items:center}.navlinks a{text-decoration:none;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--teal)}
-    .pill{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:999px;background:var(--teal);color:white!important;text-decoration:none;font-weight:700;font-size:.92rem;box-shadow:0 7px 18px #087e8226}
-    .hero{padding:28px 0 36px;display:grid;grid-template-columns:1.22fr .78fr;gap:56px;align-items:center}
-    .eyebrow{color:var(--teal);text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:800}
-    h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.04;letter-spacing:-.065em;margin:8px 0 18px;max-width:720px}
-    .hero p{font-size:1.15rem;max-width:670px;color:var(--muted);margin:0 0 26px}.actions{display:flex;gap:12px;flex-wrap:wrap}.outline{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #c8d5d9;border-radius:999px;text-decoration:none;font-weight:700;color:var(--ink)}
-    .signal{background:var(--night);border-radius:22px;padding:28px;color:#eef8f7;box-shadow:0 22px 50px #102a3623}.signal small{color:#95c9c6;text-transform:uppercase;font-weight:800;letter-spacing:.13em}.signal h2{font-size:1.35rem;line-height:1.25;margin:10px 0 20px}.flow{display:grid;gap:9px}.node{padding:10px 13px;border:1px solid #ffffff24;border-radius:10px;background:#ffffff0b;font-size:.9rem}.arrow{color:var(--gold);font-size:.85rem;padding-left:18px;line-height:1}
-    .proof{border-block:1px solid var(--line);background:#fff}.proofgrid{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0}.proofitem{padding:4px 22px;border-right:1px solid var(--line)}.proofitem:first-child{padding-left:0}.proofitem:last-child{border:0}.proof strong{display:block;font-size:1.06rem}.proof span{color:var(--muted);font-size:.86rem}
-    section{padding:56px 0}.sectionhead{max-width:720px;margin-bottom:25px}.sectionhead h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.05em;margin:10px 0 12px}.sectionhead p{color:var(--muted);margin:0}
-    .platform{background:var(--night);color:white;border-radius:26px;padding:30px;position:relative;overflow:hidden}.platform:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #72c5c036;border-radius:50%;right:-80px;top:-120px;box-shadow:0 0 0 32px #72c5c015,0 0 0 64px #72c5c00d}.platformtop{display:flex;justify-content:space-between;gap:25px;align-items:start;position:relative;z-index:1}.platform h3{font-size:1.8rem;line-height:1.15;letter-spacing:-.04em;margin:8px 0 12px}.platform p{color:#c0d1d5;max-width:740px}.badge{display:inline-block;white-space:nowrap;border:1px solid #75c7c45c;border-radius:999px;color:#9be1d9;padding:7px 12px;font-size:.8rem;font-weight:700}.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px;position:relative;z-index:1}.phase{border:1px solid #ffffff24;background:#ffffff09;border-radius:14px;padding:18px}.phase b{display:block;color:#f0bd6b;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}.phase h4{font-size:1.03rem;margin:9px 0 7px}.phase p{font-size:.86rem;line-height:1.5;margin:0;color:#c0d1d5}
-    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.principle{background:white;border:1px solid var(--line);border-radius:16px;padding:23px}.principle .num{font-size:.8rem;font-weight:800;color:var(--teal);letter-spacing:.12em}.principle h3{margin:9px 0 6px;font-size:1.1rem}.principle p{margin:0;color:var(--muted);font-size:.93rem}
-    .about{display:grid;grid-template-columns:.75fr 1.25fr;gap:38px;align-items:start}.about h2{font-size:2.4rem;line-height:1.1;letter-spacing:-.05em;margin:8px 0}.about p{color:var(--muted)}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.skill{background:var(--pale);color:#285558;border:1px solid #d8e8e7;padding:7px 12px;border-radius:999px;font-size:.86rem;font-weight:650}
-    .education{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.edu{border-left:3px solid var(--gold);padding:4px 0 4px 15px}.edu b{display:block}.edu span{color:var(--muted);font-size:.9rem}
-    .callout{background:#eaf3f3;border:1px solid #d3e6e3;border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px}.callout h2{font-size:1.7rem;line-height:1.15;margin:0 0 8px;letter-spacing:-.04em}.callout p{margin:0;color:var(--muted)}
-    footer{padding:28px 0 40px;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid var(--line);padding-top:22px}.foot a{color:var(--teal);font-weight:700;text-decoration:none}
-    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:32px;padding:28px 0 36px}.proofgrid{grid-template-columns:1fr 1fr;gap:16px}.proofitem{padding:4px 12px;border:0}.proofitem:first-child{padding-left:12px}.phases{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:20px}.navlinks{gap:12px}.navlinks a:not(.pill){display:none}}
-    @media(max-width:520px){.wrap{width:min(100% - 28px,1100px)}.platform{padding:25px 20px}.platformtop{display:block}.badge{margin-top:8px}.phases,.principles,.education{grid-template-columns:1fr}.callout{display:block}.callout .pill{margin-top:17px}.proofgrid{padding:15px 0}.foot{align-items:flex-start;flex-direction:column}}
+    :root {
+      --bg: #f9fbfb;
+      --card-bg: #ffffff;
+      --ink: #111d28;
+      --ink-light: #2c3e50;
+      --muted: #536474;
+      --teal: #087e82;
+      --teal-deep: #065457;
+      --teal-subtle: #edf7f7;
+      --teal-border: #bce1e2;
+      --gold: #b37319;
+      --gold-subtle: #fef8ef;
+      --gold-border: #f3d7aa;
+      --line: #dfe7eb;
+      --font-serif: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, Georgia, serif;
+      --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 15.5px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1140px, calc(100% - 40px)); margin: auto; }
+
+    /* Navigation */
+    header {
+      background: rgba(249, 251, 251, 0.95);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--teal);
+    }
+    .nav-links { display: flex; gap: 10px; align-items: center; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn.primary {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: white;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+      border-color: #b5c7d3;
+    }
+    .btn.primary:hover {
+      background: var(--teal-deep);
+      border-color: var(--teal-deep);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 50px 0 40px;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 40px;
+      align-items: start;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 4.1vw, 3.7rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .hero-lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+      max-width: 640px;
+    }
+
+    /* Executive Credentials Dossier */
+    .exec-dossier {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(17, 29, 40, 0.03);
+    }
+    .dossier-header {
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--teal);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .dossier-group { margin-bottom: 16px; }
+    .dossier-group:last-child { margin-bottom: 0; }
+    .dossier-group h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .epic-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .epic-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--teal);
+      border: 1px solid var(--teal);
+      color: white;
+      padding: 4px 11px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+    .epic-badge:hover {
+      background: var(--teal-deep);
+      border-color: var(--teal-deep);
+      transform: translateY(-1px);
+    }
+    .edu-item {
+      font-size: 0.9rem;
+      color: var(--ink);
+      line-height: 1.35;
+      margin-bottom: 6px;
+    }
+    .edu-item span {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Enterprise Metric Bar */
+    .proof-banner {
+      border-block: 1px solid var(--line);
+      background: white;
+      padding: 20px 0;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .proof-stat {
+      padding: 0 14px;
+      border-right: 1px solid var(--line);
+    }
+    .proof-stat:first-child { padding-left: 0; }
+    .proof-stat:last-child { border: none; }
+    .proof-val {
+      font-family: var(--font-serif);
+      font-size: 1.95rem;
+      line-height: 1;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .proof-val em {
+      font-family: var(--font-sans);
+      font-style: normal;
+      font-size: 1.05rem;
+      color: var(--teal);
+    }
+    .proof-stat span {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    /* Main Showcase Section */
+    section { padding: 52px 0; }
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+    .section-head h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 8px 0 10px;
+    }
+    .section-head p {
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    /* Master Tabs */
+    .master-tab-bar {
+      display: inline-flex;
+      background: #edf3f5;
+      padding: 5px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      border: 1px solid var(--line);
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .master-tab {
+      padding: 8px 22px;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .master-tab.active {
+      background: white;
+      color: var(--teal);
+      box-shadow: 0 2px 8px rgba(17, 29, 40, 0.08);
+    }
+
+    .master-panel { display: none; }
+    .master-panel.active { display: block; }
+
+    /* Interactive System Component (Shared by Blueprint & Case Studies) */
+    .interactive-system {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(17, 29, 40, 0.03);
+    }
+    .system-nav {
+      display: flex;
+      border-bottom: 1px solid var(--line);
+      background: #f7fafa;
+      overflow-x: auto;
+    }
+    .sys-tab, .case-tab {
+      flex: 1;
+      padding: 15px 18px;
+      border: none;
+      background: transparent;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      text-align: left;
+      border-right: 1px solid var(--line);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .sys-tab:last-child, .case-tab:last-child { border-right: none; }
+    .sys-tab.active, .case-tab.active {
+      background: white;
+      color: var(--teal);
+      border-bottom: 3px solid var(--teal);
+    }
+
+    /* Strategic Case Studies Panels */
+    .case-panel {
+      display: none;
+      padding: 30px;
+    }
+    .case-panel.active {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 32px;
+    }
+    .case-meta {
+      border-right: 1px solid var(--line);
+      padding-right: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .case-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--teal);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .case-title {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .case-summary {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .case-tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .case-tech {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: var(--ink-light);
+    }
+    .case-breakdown {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+    .breakdown-row {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .breakdown-row.accent {
+      background: var(--teal-subtle);
+      border-color: var(--teal-border);
+    }
+    .breakdown-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .breakdown-row.accent .breakdown-label { color: var(--teal); }
+    .breakdown-text {
+      font-size: 0.9rem;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    /* Architecture Blueprint Container */
+    .system-content { padding: 30px; }
+    .sys-panel { display: none; }
+    .sys-panel.active { display: block; }
+    .sys-panel h3 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+    .sys-panel p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      max-width: 820px;
+    }
+    .sys-specs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .spec-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .spec-card strong {
+      display: block;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+    .spec-card span {
+      font-size: 0.84rem;
+      color: var(--ink-light);
+      line-height: 1.4;
+      display: block;
+    }
+
+    /* Translator Advantage Container */
+    .translator-system {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 4px 18px rgba(17, 29, 40, 0.03);
+    }
+    .translator-eyebrow {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--teal);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .translator-system h3 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .translator-system > p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      max-width: 820px;
+    }
+    .translation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .trans-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .trans-num {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .trans-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+    .trans-box {
+      font-size: 0.84rem;
+      line-height: 1.45;
+      padding: 12px 14px;
+      border-radius: 8px;
+    }
+    .trans-box strong {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+    }
+    .trans-box.clinic {
+      background: var(--gold-subtle);
+      border: 1px solid var(--gold-border);
+      border-left: 3px solid var(--gold);
+      color: var(--ink-light);
+    }
+    .trans-box.clinic strong {
+      color: var(--gold);
+    }
+    .trans-box.arch {
+      background: var(--teal-subtle);
+      border: 1px solid var(--teal-border);
+      border-left: 3px solid var(--teal);
+      color: var(--ink-light);
+    }
+    .trans-box.arch strong {
+      color: var(--teal);
+    }
+
+    /* Technical Repositories Showcase (Bottom Section) */
+    .repo-callout {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 32px;
+      margin: 20px 0 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 4px 20px rgba(17, 29, 40, 0.03);
+    }
+    .repo-callout-content {
+      max-width: 680px;
+    }
+    .repo-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--teal);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .repo-callout h3 {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .repo-callout p {
+      color: var(--muted);
+      font-size: 0.93rem;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .repo-callout .tech-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .repo-callout-action {
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; gap: 32px; padding: 36px 0; }
+      .case-panel.active { grid-template-columns: 1fr; gap: 20px; padding: 22px; }
+      .case-meta { border-right: none; border-bottom: 1px solid var(--line); padding: 0 0 20px; }
+      .proof-grid { grid-template-columns: 1fr 1fr; }
+      .proof-stat { border-right: none; }
+      .translation-grid { grid-template-columns: 1fr; }
+      .sys-specs { grid-template-columns: 1fr; }
+      .repo-callout { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 580px) {
+      .proof-grid { grid-template-columns: 1fr; }
+      .footer-wrap { flex-direction: column; gap: 8px; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
-  <nav class="nav wrap" aria-label="Main navigation">
-    <a class="brand" href="#top">Brandi Enrietti</a>
-    <div class="navlinks">
-      <a class="pill" href="https://www.linkedin.com/in/brandi-enrietti/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
-      <a class="pill email-pill" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=blenrietti@gmail.com" target="_blank" rel="noopener noreferrer">Email Brandi</a>
-    </div>
-  </nav>
 
-  <main id="top">
-    <div class="wrap hero">
-      <div>
-        <h1>From healthcare data to decisions teams can trust.</h1>
-        <p>I build healthcare data products across clinical, operational, and financial domains—connecting data engineering, applied analytics, and BI to turn complex information into reliable models and decision-ready insight.</p>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Brandi Enrietti</div>
+      <div class="nav-links">
+        <a class="btn" href="https://www.linkedin.com/in/brandi-enrietti/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+        <a class="btn" href="mailto:blenrietti@gmail.com">Contact Brandi</a>
       </div>
-      <aside class="signal" aria-label="Professional experience and strengths">
-        <small>Experience &amp; strengths</small>
-        <h2>Connecting clinical, operational, and financial data to useful decisions.</h2>
-        <div class="flow">
-          <div class="node"><strong>Clinical data science</strong><br>Clinical data models, statistical analyses, and predictive analytics</div>
-          <div class="node"><strong>Data engineering</strong><br>GCP pipelines, BigQuery, ETL workflows, and data architecture</div>
-          <div class="node"><strong>Operational &amp; financial BI</strong><br>Power BI, DAX, SQL, and performance reporting</div>
-          <div class="node"><strong>Delivery &amp; quality</strong><br>Data validation, operational insight, and cross-functional leadership</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="wrap hero">
+      <div>
+        <h1>Architecting healthcare data systems that clinicians trust and executives act on.</h1>
+        <p class="hero-lead">
+          Over 10 years aligning clinical leadership, operational directors, and financial stakeholders around unified, governance-first data architectures. Grounded in ambulatory and acute care, as well as clinical research; certified in Epic enterprise models; proven in enterprise cloud data engineering.
+        </p>
+      </div>
+
+      <!-- Dossier Sidebar -->
+      <aside class="exec-dossier" aria-label="Professional Credentials">
+        <span class="dossier-header">Executive Profile &amp; Depth</span>
+        
+        <div class="dossier-group">
+          <h4>Academic Foundation</h4>
+          <div class="edu-item">
+            <strong>M.S., Data Analytics</strong>
+            <span>Western Governors University</span>
+          </div>
+          <div class="edu-item">
+            <strong>B.S., Business Management</strong>
+            <span>Colorado State University</span>
+          </div>
+        </div>
+
+        <div class="dossier-group">
+          <h4>Enterprise EHR Certifications (6x)</h4>
+          <div class="epic-grid">
+            <span class="epic-badge">Cogito</span>
+            <span class="epic-badge">Clarity</span>
+            <span class="epic-badge">Caboodle</span>
+            <span class="epic-badge">Clinical Data Model</span>
+            <span class="epic-badge">Patient Access Model</span>
+            <span class="epic-badge">Rev Mgmt Model</span>
+          </div>
+        </div>
+
+        <div class="dossier-group">
+          <h4>Core Stack</h4>
+          <div style="font-size: 0.82rem; color: var(--muted); line-height: 1.45;">
+            Google Cloud (BigQuery) &bull; dbt &bull; Apache Airflow &bull; Python &bull; SQL &bull; Power BI (Advanced DAX) &bull; Terraform
+          </div>
         </div>
       </aside>
+    </section>
+
+    <!-- PROOF / SCALE METRICS -->
+    <div class="proof-banner">
+      <div class="wrap proof-grid">
+        <div class="proof-stat">
+          <div class="proof-val">10<em>+</em></div>
+          <span>Years leading clinical, operational, and financial data projects</span>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-val">10<em>TB+</em></div>
+          <span>Clinical records modeled across warehouse data marts</span>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-val">6<em>x</em></div>
+          <span>Certified Epic EHR data model &amp; Cogito specialist</span>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-val">Full<em>-Stack</em></div>
+          <span>Care workflows &amp; Epic models to cloud infrastructure &amp; executive BI</span>
+        </div>
+      </div>
     </div>
 
-    <section id="about" class="wrap">
-      <div class="about">
-        <div><h2>Healthcare context.<br>Data-minded craft.</h2></div>
-        <div>
-          <p>I am a Healthcare Data Professional with experience across clinical, operational, and financial analytics—including data architecture, pipeline development, statistical analysis, and business intelligence. I enjoy connecting technical systems to the people and decisions they support.</p>
-          <div class="skills"><span class="skill">SQL</span><span class="skill">Python</span><span class="skill">BigQuery</span><span class="skill">Power BI</span><span class="skill">DAX</span><span class="skill">Data modeling</span><span class="skill">Data quality</span><span class="skill">Applied statistics</span></div>
-          <div class="education">
-            <div class="edu"><b>M.S., Data Analytics</b><span>Western Governors University</span></div>
-            <div class="edu"><b>B.S., Business Management</b><span>Colorado State University</span></div>
+    <!-- CONDENSED SHOWCASE: TABBED CASE STUDIES, BLUEPRINT & TRANSLATOR ADVANTAGE -->
+    <section class="wrap" id="showcase">
+      <div class="section-head">
+        <h2>Executive Portfolio &amp; System Engineering</h2>
+        <p>
+          Switch between production case studies, system architecture blueprints, and clinical-to-technical translation frameworks.
+        </p>
+      </div>
+
+      <!-- Master Tabs -->
+      <div class="master-tab-bar" role="tablist">
+        <button class="master-tab active" data-target="cases" onclick="switchMasterTab('cases')" role="tab" aria-selected="true">Strategic Case Studies</button>
+        <button class="master-tab" data-target="architecture" onclick="switchMasterTab('architecture')" role="tab" aria-selected="false">Architecture Blueprint</button>
+        <button class="master-tab" data-target="translator" onclick="switchMasterTab('translator')" role="tab" aria-selected="false">The Translator Advantage</button>
+      </div>
+
+      <!-- PANEL 1: STRATEGIC CASE STUDIES (TABBED SYSTEM) -->
+      <div class="master-panel active" id="panel-cases" role="tabpanel">
+        <div class="interactive-system">
+          <div class="system-nav" role="tablist">
+            <button class="case-tab active" onclick="switchCaseTab(0)" role="tab" aria-selected="true">01 / Readmission &amp; Risk Scoring</button>
+            <button class="case-tab" onclick="switchCaseTab(1)" role="tab" aria-selected="false">02 / Bed Telemetry &amp; ED Dwell-Time</button>
+            <button class="case-tab" onclick="switchCaseTab(2)" role="tab" aria-selected="false">03 / Claim Denial Risk Engine</button>
+          </div>
+
+          <!-- Case 1 -->
+          <article class="case-panel active" role="tabpanel">
+            <div class="case-meta">
+              <div>
+                <span class="case-tag">Clinical Quality &amp; Safety</span>
+                <h3 class="case-title">Leakage-Protected Readmission &amp; Risk Scoring</h3>
+                <p class="case-summary">
+                  Patient risk stratification architecture evaluating 30-day readmissions. Models are isolated by strict historical event times to guarantee clinical validity without retrospective data leakage.
+                </p>
+              </div>
+              <div class="case-tech-list">
+                <span class="case-tech">BigQuery</span>
+                <span class="case-tech">dbt Core</span>
+                <span class="case-tech">Python ML</span>
+                <span class="case-tech">Epic Clarity</span>
+              </div>
+            </div>
+            <div class="case-breakdown">
+              <div class="breakdown-row">
+                <span class="breakdown-label">Operational Challenge</span>
+                <div class="breakdown-text">Clinical readmission models suffer from target leakage by evaluating lab and discharge notes recorded after triage decisions are finalized.</div>
+              </div>
+              <div class="breakdown-row">
+                <span class="breakdown-label">Architectural Strategy</span>
+                <div class="breakdown-text">Time-aware feature extraction pipelines isolating pre-admission event windows from post-encounter discharge records with automated model monitoring.</div>
+              </div>
+              <div class="breakdown-row accent">
+                <span class="breakdown-label">Strategic Outcome</span>
+                <div class="breakdown-text">Actionable bedside risk scores integrated directly into clinical review cadences without overfitted bias.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="case-panel" role="tabpanel">
+            <div class="case-meta">
+              <div>
+                <span class="case-tag">Operational Throughput</span>
+                <h3 class="case-title">Bed Telemetry &amp; ED Dwell-Time Governance</h3>
+                <p class="case-summary">
+                  Unified fragmented ADT event logs, surgical schedules, and environmental service turnaround data to capture physical bed availability and emergency department dwell times.
+                </p>
+              </div>
+              <div class="case-tech-list">
+                <span class="case-tech">Airflow</span>
+                <span class="case-tech">BigQuery Marts</span>
+                <span class="case-tech">Power BI / DAX</span>
+                <span class="case-tech">ADT Feeds</span>
+              </div>
+            </div>
+            <div class="case-breakdown">
+              <div class="breakdown-row">
+                <span class="breakdown-label">Operational Challenge</span>
+                <div class="breakdown-text">EHR discharge stamps reflect nursing clerical sign-off rather than actual room vacancy, distorting census tracking and boarding metrics.</div>
+              </div>
+              <div class="breakdown-row">
+                <span class="breakdown-label">Architectural Strategy</span>
+                <div class="breakdown-text">Event reconciliation pipelines joining housekeeping completion timestamps, transport triggers, and Epic ADT milestones.</div>
+              </div>
+              <div class="breakdown-row accent">
+                <span class="breakdown-label">Strategic Outcome</span>
+                <div class="breakdown-text">Dependable operational visibility that reduced administrative bed-hold lag and provided reliable telemetry.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="case-panel" role="tabpanel">
+            <div class="case-meta">
+              <div>
+                <span class="case-tag">Financial Integrity</span>
+                <h3 class="case-title">Revenue Cycle &amp; Claim Denial Risk Engine</h3>
+                <p class="case-summary">
+                  Integrated 835/837 EDI feeds with Epic Revenue Management structures, training an automated classifier to detect denial-prone claim configurations prior to bill submission.
+                </p>
+              </div>
+              <div class="case-tech-list">
+                <span class="case-tech">Epic Rev Mgmt</span>
+                <span class="case-tech">EDI 835/837</span>
+                <span class="case-tech">Scikit-Learn</span>
+                <span class="case-tech">dbt Tests</span>
+              </div>
+            </div>
+            <div class="case-breakdown">
+              <div class="breakdown-row">
+                <span class="breakdown-label">Operational Challenge</span>
+                <div class="breakdown-text">Post-service denial appeals are labor-intensive and bleed margin due to subtle coding discrepancies and late pre-authorization updates.</div>
+              </div>
+              <div class="breakdown-row">
+                <span class="breakdown-label">Architectural Strategy</span>
+                <div class="breakdown-text">Consolidated billing drop files with historical adjudication histories in BigQuery, generating prioritized work queues based on denial probability scores.</div>
+              </div>
+              <div class="breakdown-row accent">
+                <span class="breakdown-label">Strategic Outcome</span>
+                <div class="breakdown-text">Accelerated clean claim rates, reduced write-offs, and focused billing teams on high-yield interventions.</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- PANEL 2: ARCHITECTURE BLUEPRINT -->
+      <div class="master-panel" id="panel-architecture" role="tabpanel">
+        <div class="interactive-system">
+          <div class="system-nav" role="tablist">
+            <button class="sys-tab active" onclick="switchSysTab(0)" role="tab" aria-selected="true">01 / Synthetic Data &amp; Anomaly Engine</button>
+            <button class="sys-tab" onclick="switchSysTab(1)" role="tab" aria-selected="false">02 / BigQuery Warehouse &amp; dbt</button>
+            <button class="sys-tab" onclick="switchSysTab(2)" role="tab" aria-selected="false">03 / Clinical ML &amp; Leakage Protection</button>
+            <button class="sys-tab" onclick="switchSysTab(3)" role="tab" aria-selected="false">04 / Telemetry &amp; Data Governance</button>
+          </div>
+
+          <div class="system-content">
+            <!-- Subtab 1 -->
+            <div class="sys-panel active" role="tabpanel">
+              <h3>Deterministic Generation &amp; Stress Testing</h3>
+              <p>
+                A Python generator simulating complex healthcare operational graphs: connected patient encounters, clinical observation streams, and CMS-1500 revenue claims with injected anomalies to test pipeline integrity.
+              </p>
+              <div class="sys-specs">
+                <div class="spec-card">
+                  <strong>Deterministic Seeding</strong>
+                  <span>Fully reproducible test data runs generating longitudinal patient paths across outpatient and inpatient encounters.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Clinical Edge Cases</strong>
+                  <span>Injects out-of-sequence vital timestamps, orphaned claim IDs, and missing provider NPIs to validate ingestion resilience.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Automated Manifest</strong>
+                  <span>Emits an audit manifest verifying whether downstream dbt schema tests accurately catch all intentional edge cases.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subtab 2 -->
+            <div class="sys-panel" role="tabpanel">
+              <h3>Cloud Data Warehouse &amp; dbt Dimensional Marts</h3>
+              <p>
+                Scalable Google BigQuery schemas managed via dbt Core, transforming raw staging inputs into verified dimensional models, fact tables, and executive reporting marts.
+              </p>
+              <div class="sys-specs">
+                <div class="spec-card">
+                  <strong>Staging &amp; Cleansing</strong>
+                  <span>Standardized typing, column-level documentation, and automated deduping with surrogate keys across sources.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Dimensional Core</strong>
+                  <span>Star-schema dimensional modeling for patients, providers, facilities, and encounters designed for sub-second BI execution.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Automated CI/CD</strong>
+                  <span>GitHub Actions validating pull requests with comprehensive dbt unit tests and BigQuery partition pruning checks.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subtab 3 -->
+            <div class="sys-panel" role="tabpanel">
+              <h3>Clinical ML Engine with Strict Temporal Guardrails</h3>
+              <p>
+                Production-grade machine learning pipelines predicting patient readmission risk and claim denial propensity, guarded against retrospective target leakage.
+              </p>
+              <div class="sys-specs">
+                <div class="spec-card">
+                  <strong>Bitemporal Isolation</strong>
+                  <span>Enforces strict temporal split points, preventing models from seeing clinical events recorded after the index encounter cutoff.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Interpretability</strong>
+                  <span>SHAP value integration surfacing clinical and operational drivers behind individual risk classifications for clinicians.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Drift Monitoring</strong>
+                  <span>Automated population stability index (PSI) tracking to alert data engineering teams of data distribution drift.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subtab 4 -->
+            <div class="sys-panel" role="tabpanel">
+              <h3>System Telemetry, Observability &amp; Governance</h3>
+              <p>
+                Holistic operational monitoring connecting pipeline run telemetry, data freshness metrics, and Power BI DAX performance logs into unified executive views.
+              </p>
+              <div class="sys-specs">
+                <div class="spec-card">
+                  <strong>Pipeline Telemetry</strong>
+                  <span>Apache Airflow execution metrics, failure alerts, and table SLA trackers streamed into monitoring dashboards.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Quality Test Gates</strong>
+                  <span>Automated pipeline halt triggers whenever key freshness thresholds or referential integrity constraints fail.</span>
+                </div>
+                <div class="spec-card">
+                  <strong>Executive BI Integration</strong>
+                  <span>Optimized semantic layers ready for Power BI consumption, complete with pre-calculated DAX business logic.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 3: THE TRANSLATOR ADVANTAGE -->
+      <div class="master-panel" id="panel-translator" role="tabpanel">
+        <div class="translator-system">
+          <span class="translator-eyebrow">The Translator Advantage</span>
+          <h3>Why healthcare data breaks without bedside fluency</h3>
+          <p>
+            Generic data patterns collapse under clinical realities. Here is how dual-domain literacy solves three systemic health system data pitfalls across the complete data lifecycle.
+          </p>
+
+          <div class="translation-grid">
+            <div class="trans-card">
+              <span class="trans-num">01 / Latency</span>
+              <div class="trans-title">Late-Arriving Bedside Documentation</div>
+              <div class="trans-box clinic">
+                <strong>Bedside Reality</strong>
+                In trauma or ICU resuscitations, vitals and interventions are entered hours after real-time administration.
+              </div>
+              <div class="trans-box arch">
+                <strong>Architectural Solution</strong>
+                Bitemporal modeling separating entry timestamp from actual event time, protecting predictive models from target leakage.
+              </div>
+            </div>
+
+            <div class="trans-card">
+              <span class="trans-num">02 / Telemetry</span>
+              <div class="trans-title">Administrative vs. Physical Bed Discharge</div>
+              <div class="trans-box clinic">
+                <strong>Bedside Reality</strong>
+                Beds are marked 'occupied' while in transit, and 'vacant' while room turnover or luggage remains.
+              </div>
+              <div class="trans-box arch">
+                <strong>Architectural Solution</strong>
+                Reconciled multi-system telemetry (ADT + environmental services) to establish true operational turnaround intervals.
+              </div>
+            </div>
+
+            <div class="trans-card">
+              <span class="trans-num">03 / Semantics</span>
+              <div class="trans-title">ICD-10 vs. Clinical Presentation</div>
+              <div class="trans-box clinic">
+                <strong>Bedside Reality</strong>
+                Billing codes prioritize reimbursement specificity; bedside flowsheets track physiological diagnosis trajectory.
+              </div>
+              <div class="trans-box arch">
+                <strong>Architectural Solution</strong>
+                Dimensional crosswalks linking raw Epic flowsheets to standardized analytical taxonomies and executive reporting.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <div class="proof"><div class="wrap proofgrid">
-      <div class="proofitem"><strong>10+ years</strong><span>Healthcare data experience</span></div>
-      <div class="proofitem"><strong>End to end</strong><span>Engineering · ML · BI</span></div>
-      <div class="proofitem"><strong>Enterprise healthcare</strong><span>Clinical · operational · financial</span></div>
-      <div class="proofitem"><strong>Cross-functional delivery</strong><span>Analytics · operations · strategy</span></div>
-    </div></div>
-
-    <section id="platform" class="wrap">
-      <div class="sectionhead">
-        <div class="eyebrow">Featured project</div>
-        <h2>Healthcare Intelligence Platform</h2>
-        <p>A simulated enterprise workflow connecting clinical, operational, and financial data through ingestion, warehouse modeling, machine learning, BI, and pipeline observability. Every phase feeds the next.</p>
-      </div>
-      <div class="platform">
-        <div class="platformtop"><div>
-          <div class="eyebrow" style="color:#9be1d9">End-to-end healthcare data system</div>
-          <h3>Messy events in.<br>Trusted decisions out.</h3>
-          <p>The platform will generate synthetic clinical, patient-flow, and financial records with realistic data problems; transform them into tested analytical models; and present care outcomes, operational performance, financial measures, and pipeline health. All project data is synthetic and excludes patient information and proprietary employer data.</p>
-        </div><span class="badge">Synthetic data only</span></div>
-        <div class="phases">
-          <div class="phase"><b>Phase 01</b><h4>Cloud data engineering</h4><p>Python generator for clinical events, patient flow, and revenue-cycle records; Terraform for the GCP project Healthcare Intelligence; BigQuery, dbt, and automated quality checks.</p></div>
-          <div class="phase"><b>Phase 02</b><h4>Data science & ML</h4><p>Leakage-aware readmission and length-of-stay demonstrations, resource-use context, persisted predictions, and model monitoring.</p></div>
-          <div class="phase"><b>Phase 03</b><h4>BI & observability</h4><p>Power BI views for clinical outcomes, patient flow, financial performance, revenue-cycle measures, data freshness, and pipeline/model health.</p></div>
-          <div class="phase"><b>Phase 04</b><h4>Architecture & case study</h4><p>System diagrams, design trade-offs, cost choices, limitations and reproducible technical documentation.</p></div>
+    <!-- TECHNICAL REPOSITORIES SHOWCASE (BOTTOM SECTION) -->
+    <div class="wrap">
+      <section class="repo-callout">
+        <div class="repo-callout-content">
+          <span class="repo-tag">Open Architecture &amp; Codebases</span>
+          <h3>Explore End-to-End System Implementations &amp; Technical Specs</h3>
+          <p>
+            Dive into production dbt dimensional marts, temporal leakage-protection test suites, BigQuery SQL schemas, and Airflow DAGs powering this Healthcare Intelligence Platform. Additional enterprise data engineering and clinical data science projects are hosted on GitHub.
+          </p>
+          <div class="tech-badges">
+            <span class="case-tech">dbt Core</span>
+            <span class="case-tech">BigQuery SQL</span>
+            <span class="case-tech">Apache Airflow</span>
+            <span class="case-tech">Python ML</span>
+            <span class="case-tech">Epic Clarity &amp; Caboodle</span>
+            <span class="case-tech">CI/CD Testing</span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section id="approach" class="wrap" style="padding-top:10px">
-      <div class="sectionhead"><div class="eyebrow">Engineering principles</div><h2>Built to show judgment, not just code.</h2><p>With AI now able to generate code in seconds, I designed this project to showcase the judgment that makes code useful in healthcare: sound architecture, trustworthy data and models, reliable operations, and clear communication of trade-offs.</p></div>
-      <div class="principles">
-        <article class="principle"><div class="num">01 / REALISTIC DATA</div><h3>Make messiness explicit</h3><p>Handle missing timestamps, nulls, duplicate events, late arrivals, and out-of-order records with documented rules and tests.</p></article>
-        <article class="principle"><div class="num">02 / TRUSTWORTHY MODELS</div><h3>Protect validity</h3><p>Use time-aware evaluation, prevent target leakage, track model versions, and explain why synthetic-model results are not clinical evidence.</p></article>
-        <article class="principle"><div class="num">03 / OPERABLE ANALYTICS</div><h3>Measure the pipeline too</h3><p>Show freshness, volume, quality failures, and model signals alongside business measures so reliability is part of the product.</p></article>
-      </div>
-    </section>
-
-    <section class="wrap" style="padding:18px 0 40px;text-align:center">
-      <a class="pill" href="https://github.com/benrietti/Healthcare-Intelligence-Platform" target="_blank" rel="noopener noreferrer">Explore this project and more on GitHub ↗</a>
-    </section>
+        <div class="repo-callout-action">
+          <a class="btn primary" href="https://github.com/benrietti/" target="_blank" rel="noopener noreferrer">
+            Explore Repositories on GitHub ↗
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="wrap"><div class="foot"><span>© 2026 Brandi Enrietti · Built with GitHub Pages</span></div></footer>
+  <!-- STREAMLINED FOOTER -->
+  <footer>
+    <div class="wrap footer-wrap">
+      <span>&copy; 2026 Brandi Enrietti</span>
+      <span>Enterprise Healthcare Intelligence &bull; Clinical Data Architecture</span>
+    </div>
+  </footer>
+
+  <script>
+    function switchMasterTab(tabName) {
+      const tabs = document.querySelectorAll('.master-tab');
+      const panels = document.querySelectorAll('.master-panel');
+      
+      tabs.forEach(tab => {
+        const isTarget = tab.getAttribute('data-target') === tabName;
+        tab.classList.toggle('active', isTarget);
+        tab.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+      });
+
+      panels.forEach(panel => {
+        panel.classList.toggle('active', panel.id === `panel-${tabName}`);
+      });
+    }
+
+    function switchSysTab(index) {
+      const tabs = document.querySelectorAll('.sys-tab');
+      const panels = document.querySelectorAll('.sys-panel');
+      
+      tabs.forEach((tab, i) => {
+        const isActive = i === index;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach((panel, i) => {
+        panel.classList.toggle('active', i === index);
+      });
+    }
+
+    function switchCaseTab(index) {
+      const tabs = document.querySelectorAll('.case-tab');
+      const panels = document.querySelectorAll('.case-panel');
+      
+      tabs.forEach((tab, i) => {
+        const isActive = i === index;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach((panel, i) => {
+        panel.classList.toggle('active', i === index);
+      });
+    }
+  </script>
 </body>
 </html>

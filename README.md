@@ -3,19 +3,20 @@
 
  
  ## About Me
+💼 I am a results-driven healthcare data professional with 10+ years of experience leading, designing, and deploying enterprise level data solutions. I posess a BS in Business Management, a MS in Data Analytics and am certified in Epics Cogito and Clarity and Caboodle systems. 
 
 🔭 I’m currently exploring Python with a big interest in Machine Learning and Cloud Computing. 
 
-💻 I’m currently working on unsupervised machine learning utilizing clustering algorithms
+💻 I’m currently working on unsupervised machine learning utilizing clustering algorithms and I’m exploring Python with a big interest in Machine Learning and Cloud Computing. 
 
-💼 I recently graduated with a Master of Science, Data Analytics
+
 
 
 
 
 ## Experience :fire:
 
-•	Strong working knowledge of SQL, including techniques for writing efficient code over large datasets
+•	Strong working knowledge of SQL, Python, and Big Query 
 
 •	Advanced knowledge of applying statistics and data science tools on large datasets
 
@@ -25,7 +26,7 @@
 
 •	Advanced knowledge of statistical modeling techniques: GLM multiple regression, logistic regression, log-linear regression, variable selection, etc.
 
-•	Strong Python development experience
+•	Strong BI development experience
 
 •	Ability to aggregate and blend data from different data sources
 

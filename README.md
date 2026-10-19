@@ -7,7 +7,7 @@
 
 ## Executive Overview
 
-Over a decade of experience bridging the gap between clinical leadership, operational directors, and modern cloud infrastructure. Grounded in acute, ambulatory, and clinical research settings; 6x certified across enterprise Epic EHR models; and proven in production cloud data engineering.
+Nearly a decade of experience bridging the gap between clinical leadership, operational directors, and modern cloud infrastructure. Grounded in acute, ambulatory, and clinical research settings; 6x certified across enterprise Epic EHR models; and proven in production cloud data engineering.
 
 I specialize in building governance-first data platforms that clinicians trust at the bedside and executives act on in the boardroom.
 

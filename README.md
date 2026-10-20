@@ -1,6 +1,4 @@
 # Brandi Enrietti
-
-### Healthcare Data Leader & Clinical Data Scientist
 **Turning clinical, financial, and operational healthcare data into trusted data products and decisions.**
 
 [Portfolio](https://benrietti.github.io/Brandi-Enrietti/) • [LinkedIn](https://www.linkedin.com/in/brandi-enrietti/) • [Healthcare Intelligence Platform](https://github.com/benrietti/Healthcare-Intelligence-Platform) • [Email](mailto:blenrietti@gmail.com)

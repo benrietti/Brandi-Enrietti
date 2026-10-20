@@ -1,47 +1,47 @@
 # Brandi Enrietti
 
 ### Healthcare Data Leader & Clinical Data Scientist
-**Translating bedside complexity and healthcare economics into resilient, auditable cloud data architectures.**
+**Turning clinical, financial, and operational healthcare data into trusted data products and decisions.**
 
-[LinkedIn](https://www.linkedin.com/in/brandi-enrietti/) • [Portfolio](https://benrietti.github.io/) • [Email](mailto:blenrietti@gmail.com)
+[Portfolio](https://benrietti.github.io/Brandi-Enrietti/) • [LinkedIn](https://www.linkedin.com/in/brandi-enrietti/) • [Healthcare Intelligence Platform](https://github.com/benrietti/Healthcare-Intelligence-Platform) • [Email](mailto:blenrietti@gmail.com)
 
-## Executive Overview
+## Overview
 
-Nearly a decade of experience bridging the gap between clinical leadership, operational directors, and modern cloud infrastructure. Grounded in acute, ambulatory, and clinical research settings; 6x certified across enterprise Epic EHR models; and proven in production cloud data engineering.
+Healthcare data and analytics leader with nearly a decade at a national health system, partnering with quality, medical, revenue, and finance leaders. Currently a Senior Clinical Data Scientist at CommonSpirit Health, with roots in clinical research operations, six Epic data model certifications, and hands-on cloud data engineering on GCP.
 
-I specialize in building governance-first data platforms that clinicians trust at the bedside and executives act on in the boardroom.
+## Enterprise Work (CommonSpirit Health)
 
-## What I Architect
+* **Clinical Effectiveness (2023–Present):** Roadmap for 25+ analytical products a year; GCP pipelines in BigQuery, Airflow, and Python that cut manual processing time by 25%; data integrity for the OPPE platform behind 1,000 provider evaluations.
+* **Revenue Management & Payer Strategy (2022–2023):** Governed data architecture for 10+ TB of financial data; analytics behind initiatives associated with a 5% increase in recognized revenue; Power BI dashboards that cut report delivery time by 20%.
+* **Enterprise Epic Reporting (2023):** Technical lead for reporting in an Epic environment serving 20,000+ users; SQL, stored procedures, and SSRS that improved report generation efficiency by 10–15%.
+* **Clinical Research Operations (2020–2023):** Led up to 20 direct reports across 30+ concurrent studies, with zero major findings across 100 audits.
 
-* **Clinical Translation & Bitemporal Modeling:** Eliminating target leakage in clinical ML by decoupling late-arriving EHR documentation timestamps from true clinical event occurrences.
-* **Modern Data Stack & Marts:** Modeling multi-terabyte longitudinal patient records in Google BigQuery using dbt Core dimensional models and automated testing gates.
-* **Operational Telemetry:** Reconciling fragmented ADT event streams, environmental services (EVS), and surgical schedules to reflect true physical hospital bed capacity and emergency department throughput.
-* **Revenue Integrity Engines:** Training pre-bill machine learning models on EDI 835/837 feeds and Epic Revenue Management data to flag denial-prone claims before submission.
+## Healthcare Intelligence Platform (synthetic data)
 
-## Technical Ecosystem & Tooling
+An end-to-end platform built on synthetic data. No patient or employer data is used. [View the repository](https://github.com/benrietti/Healthcare-Intelligence-Platform).
 
-* **Cloud & Data Warehousing:** Google Cloud Platform (BigQuery), Terraform
-* **Data Engineering & Orchestration:** dbt Core, Apache Airflow, Python, SQL
-* **EHR Data Systems:** Epic Cogito, Clarity, Caboodle, Chronicles, ADT / HL7 / EDI feeds
-* **Clinical Data Science & BI:** Scikit-Learn, SHAP Interpretability, Pandas/NumPy, Power BI (Advanced DAX)
-* **Governance & CI/CD:** GitHub Actions, dbt schema testing, Population Stability Index (PSI) monitoring
+* **Leakage-Protected Readmission Scoring:** Time-aware feature windows that exclude information recorded after the prediction point.
+* **Bed Telemetry & ED Dwell Time:** Synthetic ADT, surgical schedule, and environmental services events reconciled to measure physical room turnaround.
+* **Claim Denial Risk Engine:** Synthetic 837 claims and 835 remittance histories used to rank pre-bill claims by denial probability.
 
-## Enterprise Credentials & Education
+## Tools
 
-### Enterprise EHR Certifications (Epic 6x)
-* Cogito Project Management & Analytics
-* Clarity Data Model
-* Caboodle Data Model
+* **Cloud & Warehousing:** Google Cloud Platform (BigQuery), Terraform
+* **Data Engineering & Orchestration:** dbt Core, Apache Airflow, Python, SQL, SSIS
+* **EHR & Interoperability:** Epic Cogito, Clarity, Caboodle; HL7; EDI 835/837
+* **Data Science & BI:** Scikit-Learn, SHAP, Pandas/NumPy, Power BI (DAX), SSRS, Tableau
+* **Governance & CI/CD:** GitHub Actions, dbt tests, Population Stability Index (PSI) monitoring
+
+## Credentials
+
+### Epic Certifications (6)
+* Cogito Fundamentals
+* Clarity Data Model Fundamentals
+* Caboodle Data Model Fundamentals
 * Clinical Data Model
 * Patient Access Data Model
 * Revenue Management Data Model
 
-### Academic Foundation
-* **M.S. in Data Analytics** — Western Governors University
-* **B.S. in Business Management** — Colorado State University
-
-## Featured Architecture & Projects
-
-* **Leakage-Protected Readmission Scoring:** Time-aware feature pipelines isolating pre-admission event windows from post-discharge data to produce auditable 30-day readmission risk scores.
-* **ED Dwell-Time & Telemetry Governance:** Event reconciliation DAGs aligning nursing EHR sign-off timestamps with true physical room turnaround.
-* **Claim Denial Probability Classifier:** Pre-service predictive engine identifying high-risk claim configurations to reduce post-encounter appeals and write-offs.
+### Education
+* **M.S., Data Analytics**, Western Governors University, 2022
+* **B.S., Business Management**, Colorado State University, 2020

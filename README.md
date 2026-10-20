@@ -5,7 +5,7 @@
 
 ## Overview
 
-Healthcare data and analytics leader with nearly a decade at a national health system, partnering with quality, medical, revenue, and finance leaders. Currently a Senior Clinical Data Scientist at CommonSpirit Health, with roots in clinical research operations, six Epic data model certifications, and hands-on cloud data engineering on GCP.
+Healthcare data and analytics leader with nearly a decade at a national health system, partnering with quality, medical, revenue, and finance leaders. Roots in clinical research operations, six Epic data model certifications, and hands-on cloud data engineering on GCP.
 
 ## Enterprise Work (CommonSpirit Health)
 

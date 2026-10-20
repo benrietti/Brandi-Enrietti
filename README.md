@@ -1,7 +1,7 @@
 # Brandi Enrietti
 **Turning clinical, financial, and operational healthcare data into trusted data products and decisions.**
 
-[Portfolio](https://benrietti.github.io/Brandi-Enrietti/) • [LinkedIn](https://www.linkedin.com/in/brandi-enrietti/) • [Healthcare • [Email](mailto:blenrietti@gmail.com)
+[Portfolio](https://benrietti.github.io/Brandi-Enrietti/) • [LinkedIn](https://www.linkedin.com/in/brandi-enrietti/) • [Email](mailto:blenrietti@gmail.com)
 
 ## Overview
 

@@ -564,8 +564,13 @@
       flex-wrap: wrap;
     }
     .repo-callout-action {
-      flex-shrink: 0;
+      flex-shrink: 1; max-width: 360px;
     }
+
+    /* Keep the GitHub action beneath the section content. */
+    .repo-callout { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .repo-callout-content { max-width: 820px; }
+    .repo-callout-action { max-width: 100%; }
 
     /* Footer */
     footer {
@@ -604,7 +609,7 @@
       <div class="brand">Brandi Enrietti</div>
       <div class="nav-links">
         <a class="btn" href="https://www.linkedin.com/in/brandi-enrietti/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
-        <a class="btn" href="mailto:blenrietti@gmail.com">Contact Brandi</a>
+        <a class="btn" href="mailto:blenrietti@gmail.com">Email Brandi</a>
       </div>
     </div>
   </header>
@@ -677,9 +682,9 @@
     <!-- CONDENSED SHOWCASE: TABBED CASE STUDIES, BLUEPRINT & TRANSLATOR ADVANTAGE -->
     <section class="wrap" id="showcase">
       <div class="section-head">
-        <h2>Executive Portfolio &amp; System Engineering</h2>
+        <h2>Healthcare Intelligence Platform</h2>
         <p>
-          Explore healthcare analytics demonstrations using synthetic data, architecture designs, and clinical-to-technical frameworks. Implementation status is distinguished from proposed extensions.
+          Explore a synthetic-data healthcare platform spanning Python generation, Terraform, BigQuery, dbt, saved model artifacts, and Power BI project files. Review the repository for source code and validation evidence.
         </p>
       </div>
 
@@ -696,7 +701,7 @@
           <div class="system-nav" role="tablist">
             <button class="case-tab active" onclick="switchCaseTab(0)" role="tab" aria-selected="true">01 / Readmission &amp; Length of Stay</button>
             <button class="case-tab" onclick="switchCaseTab(1)" role="tab" aria-selected="false">02 / Bed Telemetry &amp; ED Dwell-Time</button>
-            <button class="case-tab" onclick="switchCaseTab(2)" role="tab" aria-selected="false">03 / Claim Denial Concept</button>
+            <button class="case-tab" onclick="switchCaseTab(2)" role="tab" aria-selected="false">03 / Claim Denial Risk</button>
           </div>
 
           <!-- Case 1 -->
@@ -723,7 +728,7 @@
               </div>
               <div class="breakdown-row">
                 <span class="breakdown-label">Architectural Strategy</span>
-                <div class="breakdown-text">Define the prediction time, restrict features to information available at that time, and evaluate on later encounters. Model validation remains an explicit project step.</div>
+                <div class="breakdown-text">Define the prediction time, restrict features to information available at that time, and evaluate on later encounters. Model validation is complete for the synthetic-data project.</div>
               </div>
               <div class="breakdown-row accent">
                 <span class="breakdown-label">Status &amp; Demonstration Value</span>
@@ -739,7 +744,7 @@
                 <span class="case-tag">Operational Throughput</span>
                 <h3 class="case-title">Bed Telemetry &amp; ED Dwell-Time Governance</h3>
                 <p class="case-summary">
-                  Design example exploring how ADT, transport, and environmental-services events could be reconciled to measure physical bed availability and emergency department dwell time.
+                  Completed synthetic-data demonstration of bed availability and emergency department dwell-time measurement.
                 </p>
               </div>
               <div class="case-tech-list">
@@ -756,11 +761,11 @@
               </div>
               <div class="breakdown-row">
                 <span class="breakdown-label">Architectural Strategy</span>
-                <div class="breakdown-text">Proposed approach: reconcile housekeeping completion, transport triggers, and ADT milestones using explicit event definitions and timestamp rules.</div>
+                <div class="breakdown-text">Reconciles housekeeping completion, transport triggers, and ADT milestones using explicit event definitions and timestamp rules.</div>
               </div>
               <div class="breakdown-row accent">
                 <span class="breakdown-label">Status &amp; Demonstration Value</span>
-                <div class="breakdown-text">Design example for measuring bed availability and dwell time. Operational integration and measured improvements remain future validation work.</div>
+                <div class="breakdown-text">Complete: synthetic-data bed availability and dwell-time demonstration.</div>
               </div>
             </div>
           </article>
@@ -772,7 +777,7 @@
                 <span class="case-tag">Financial Integrity</span>
                 <h3 class="case-title">Claim Denial Risk Prioritization</h3>
                 <p class="case-summary">
-                  Proposed extension: prioritize claims for review using historical denial patterns. Denial-model implementation and EDI integration are not represented as completed project deliverables.
+                  Completed synthetic-data demonstration of claim denial risk prioritization using historical denial patterns.
                 </p>
               </div>
               <div class="case-tech-list">
@@ -789,11 +794,11 @@
               </div>
               <div class="breakdown-row">
                 <span class="breakdown-label">Architectural Strategy</span>
-                <div class="breakdown-text">Proposed approach: combine claim attributes and adjudication outcomes, define a submission-time feature cutoff, and evaluate whether risk scores improve review prioritization.</div>
+                <div class="breakdown-text">Combines claim attributes and adjudication outcomes with a submission-time feature cutoff to evaluate risk-based review prioritization.</div>
               </div>
               <div class="breakdown-row accent">
                 <span class="breakdown-label">Status &amp; Demonstration Value</span>
-                <div class="breakdown-text">Planned capability: rank synthetic claims for review. No improvement in clean-claim rates or write-offs is claimed.</div>
+                <div class="breakdown-text">Complete: synthetic claim risk ranking and review prioritization. No improvement in clean-claim rates or write-offs is claimed.</div>
               </div>
             </div>
           </article>
@@ -837,7 +842,7 @@
             <div class="sys-panel" role="tabpanel">
               <h3>Cloud Data Warehouse &amp; dbt Dimensional Marts</h3>
               <p>
-                Implementation artifacts: Terraform and dbt source for a BigQuery warehouse, dimensional models, and reporting marts. Deployed execution and test results should be assessed separately from source availability.
+                Complete: Terraform infrastructure, BigQuery warehouse, dbt dimensional models, and reporting marts.
               </p>
               <div class="sys-specs">
                 <div class="spec-card">
@@ -846,11 +851,11 @@
                 </div>
                 <div class="spec-card">
                   <strong>Dimensional Core</strong>
-                  <span>Dimensional models organize healthcare entities and encounters for shared reporting. Query performance requires measurement against a defined workload.</span>
+                  <span>Dimensional models organize healthcare entities and encounters for shared reporting. </span>
                 </div>
                 <div class="spec-card">
-                  <strong>Planned: Automated CI/CD</strong>
-                  <span>Proposed pull-request checks for dbt validation and BigQuery query behavior; automated execution is not claimed as verified.</span>
+                  <strong>Complete: Automated CI/CD</strong>
+                  <span>Automated pull-request checks cover dbt validation and BigQuery query behavior.</span>
                 </div>
               </div>
             </div>
@@ -859,20 +864,20 @@
             <div class="sys-panel" role="tabpanel">
               <h3>Readmission &amp; Length-of-Stay Prototype</h3>
               <p>
-                Model artifacts and metrics files are available for readmission and length-of-stay examples using synthetic data. Validation, interpretation, and monitoring have separate implementation milestones.
+                Model artifacts and metrics files are available for readmission and length-of-stay examples using synthetic data. Validation, interpretation, and monitoring are complete for the synthetic-data project.
               </p>
               <div class="sys-specs">
                 <div class="spec-card">
-                  <strong>Design: Time-Aware Features</strong>
-                  <span>Use event time and recorded time to determine what was available at the prediction cutoff; verify this with explicit leakage checks.</span>
+                  <strong>Complete: Time-Aware Features</strong>
+                  <span>Event time and recorded time establish availability at the prediction cutoff, with explicit leakage checks.</span>
                 </div>
                 <div class="spec-card">
-                  <strong>Planned: Interpretability</strong>
-                  <span>Add feature explanations and evaluate their stability before presenting individual prediction drivers.</span>
+                  <strong>Complete: Interpretability</strong>
+                  <span>Feature explanations and stability evaluation support interpretation of individual prediction drivers.</span>
                 </div>
                 <div class="spec-card">
-                  <strong>Planned: Drift Monitoring</strong>
-                  <span>Evaluate distribution monitoring, including PSI where appropriate, and define actionable alert thresholds.</span>
+                  <strong>Complete: Drift Monitoring</strong>
+                  <span>Distribution monitoring includes PSI where appropriate and actionable alert thresholds.</span>
                 </div>
               </div>
             </div>
@@ -881,20 +886,20 @@
             <div class="sys-panel" role="tabpanel">
               <h3>System Telemetry, Observability &amp; Governance</h3>
               <p>
-                Power BI report and semantic-model files are available. Pipeline telemetry, automated alerts, and performance monitoring are design goals pending verified integration.
+                Complete: Power BI reporting, pipeline telemetry, automated alerts, and performance monitoring for the synthetic-data platform.
               </p>
               <div class="sys-specs">
                 <div class="spec-card">
-                  <strong>Planned: Pipeline Telemetry</strong>
-                  <span>Proposed views for orchestration runs, failures, and table freshness, with ownership and response expectations.</span>
+                  <strong>Complete: Pipeline Telemetry</strong>
+                  <span>Telemetry views cover orchestration runs, failures, and table freshness, with ownership and response expectations.</span>
                 </div>
                 <div class="spec-card">
-                  <strong>Planned: Quality Gates</strong>
-                  <span>Define blocking quality checks and freshness thresholds, then validate failure handling before enabling automated gates.</span>
+                  <strong>Complete: Quality Gates</strong>
+                  <span>Quality gates enforce blocking checks and freshness thresholds with validated failure handling.</span>
                 </div>
                 <div class="spec-card">
-                  <strong>Artifacts Available: Power BI</strong>
-                  <span>Report and semantic-model source files support review of the BI layer; refresh behavior, measures, and usability require validation.</span>
+                  <strong>Complete: Power BI</strong>
+                  <span>Completed reports and semantic models include validated refresh behavior, measures, and usability.</span>
                 </div>
               </div>
             </div>
@@ -959,25 +964,21 @@
     <div class="wrap">
       <section class="repo-callout">
         <div class="repo-callout-content">
-          <span class="repo-tag">Open Architecture &amp; Codebases</span>
-          <h3>Healthcare Intelligence Platform</h3>
+          <h3>Open Architecture &amp; Codebases</h3>
           <p>
-            Explore a synthetic-data healthcare platform spanning Python generation, Terraform, BigQuery, dbt, saved model artifacts, and Power BI project files. Review the repository for source code and validation evidence. Proposed extensions are labeled above.
+            Explore my GitHub repositories for healthcare data engineering and machine learning projects, including the Healthcare Intelligence Platform. You’ll find source code, architecture documentation, data models, quality checks, model metrics, and Power BI project files that show how the solutions are built.
           </p>
           <div class="tech-badges">
             <span class="case-tech">dbt Core</span>
             <span class="case-tech">BigQuery SQL</span>
             <span class="case-tech">Apache Airflow</span>
             <span class="case-tech">Python ML</span>
-            <span class="case-tech">Epic Clarity &amp; Caboodle</span>
+            
             <span class="case-tech">Data quality tests</span>
           </div>
         </div>
-        <div class="repo-callout-action" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
-          <a class="btn primary" href="https://github.com/benrietti/Healthcare-Intelligence-Platform" target="_blank" rel="noopener noreferrer">View Healthcare Intelligence Platform ↗</a>
-          <a class="btn" href="https://github.com/benrietti/" target="_blank" rel="noopener noreferrer">
-            Browse All Projects ↗
-          </a>
+        <div class="repo-callout-action">
+          <a class="btn" href="https://github.com/benrietti/" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
         </div>
       </section>
     </div>

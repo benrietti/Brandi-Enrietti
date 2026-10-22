@@ -153,7 +153,7 @@
       gap: 6px;
     }
     .epic-badge {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 600;
       background: var(--teal);
       border: 1px solid var(--teal);
@@ -164,6 +164,8 @@
       align-items: center;
       transition: all 0.2s ease;
     }
+    .epic-credential-pair { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+    .epic-credential-pair .epic-badge { font-size: 0.65rem; padding: 4px 7px; white-space: nowrap; }
     .epic-badge:hover {
       background: var(--teal-deep);
       border-color: var(--teal-deep);
@@ -647,8 +649,10 @@
             <span class="epic-badge">Clarity Data Model Fundamentals</span>
             <span class="epic-badge">Caboodle Data Model Fundamentals</span>
             <span class="epic-badge">Clinical Data Model</span>
-            <span class="epic-badge">Patient Access Data Model</span>
-            <span class="epic-badge">Revenue Management Data Model</span>
+            <div class="epic-credential-pair">
+              <span class="epic-badge">Patient Access Data Model</span>
+              <span class="epic-badge" title="Revenue Management Data Model">Revenue Management Data Model</span>
+            </div>
           </div>
         </div>
 
@@ -699,9 +703,9 @@
       <div class="master-panel active" id="panel-cases" role="tabpanel">
         <div class="interactive-system">
           <div class="system-nav" role="tablist">
-            <button class="case-tab active" onclick="switchCaseTab(0)" role="tab" aria-selected="true">01 / Readmission &amp; Length of Stay</button>
-            <button class="case-tab" onclick="switchCaseTab(1)" role="tab" aria-selected="false">02 / Bed Telemetry &amp; ED Dwell-Time</button>
-            <button class="case-tab" onclick="switchCaseTab(2)" role="tab" aria-selected="false">03 / Claim Denial Risk</button>
+            <button class="case-tab active" onclick="switchCaseTab(0)" role="tab" aria-selected="true">Readmission &amp; Length of Stay</button>
+            <button class="case-tab" onclick="switchCaseTab(1)" role="tab" aria-selected="false">Encounter Operations &amp; Data Quality</button>
+            <button class="case-tab" onclick="switchCaseTab(2)" role="tab" aria-selected="false">Claim Denial Risk</button>
           </div>
 
           <!-- Case 1 -->
@@ -718,7 +722,6 @@
                 <span class="case-tech">BigQuery</span>
                 <span class="case-tech">dbt Core</span>
                 <span class="case-tech">Python ML</span>
-                <span class="case-tech">Synthetic encounters</span>
               </div>
             </div>
             <div class="case-breakdown">
@@ -731,7 +734,7 @@
                 <div class="breakdown-text">Define the prediction time, restrict features to information available at that time, and evaluate on later encounters. Model validation is complete for the synthetic-data project.</div>
               </div>
               <div class="breakdown-row accent">
-                <span class="breakdown-label">Status &amp; Demonstration Value</span>
+                <span class="breakdown-label">Implementation &amp; Demonstration Value</span>
                 <div class="breakdown-text">Demonstrates readmission and length-of-stay prediction on synthetic encounters. Saved models and metrics are available for review; clinical deployment and external validation are outside this demonstration.</div>
               </div>
             </div>
@@ -741,31 +744,31 @@
           <article class="case-panel" role="tabpanel">
             <div class="case-meta">
               <div>
-                <span class="case-tag">Operational Throughput</span>
-                <h3 class="case-title">Bed Telemetry &amp; ED Dwell-Time Governance</h3>
+                <span class="case-tag">Encounter Operations &amp; Data Reliability</span>
+                <h3 class="case-title">Encounter Operations &amp; Data Quality</h3>
                 <p class="case-summary">
-                  Completed synthetic-data demonstration of bed availability and emergency department dwell-time measurement.
+                  Synthetic encounter and event data organized into reporting models that track admission and discharge timing, late-arriving events, and data-quality conditions.
                 </p>
               </div>
               <div class="case-tech-list">
-                <span class="case-tech">Airflow</span>
-                <span class="case-tech">BigQuery Marts</span>
-                <span class="case-tech">Power BI / DAX</span>
-                <span class="case-tech">ADT Feeds</span>
+                <span class="case-tech">EDI 835/837</span>
+                <span class="case-tech">dbt Tests</span>
+                <span class="case-tech">Python</span>
+                <span class="case-tech">Scikit-Learn</span>
               </div>
             </div>
             <div class="case-breakdown">
               <div class="breakdown-row">
                 <span class="breakdown-label">Operational Challenge</span>
-                <div class="breakdown-text">Administrative discharge timestamps may differ from physical room vacancy and cleaning completion, affecting throughput measures.</div>
+                <div class="breakdown-text">Late-arriving events, missing timestamps, and replayed source records can distort encounter reporting and obscure data reliability.</div>
               </div>
               <div class="breakdown-row">
                 <span class="breakdown-label">Architectural Strategy</span>
-                <div class="breakdown-text">Reconciles housekeeping completion, transport triggers, and ADT milestones using explicit event definitions and timestamp rules.</div>
+                <div class="breakdown-text">Separate event time from ingestion time, deduplicate source events, and aggregate encounter-level quality indicators. Apply dbt checks to encounter timestamps, valid ranges, financial consistency, and claim-to-encounter relationships.</div>
               </div>
               <div class="breakdown-row accent">
-                <span class="breakdown-label">Status &amp; Demonstration Value</span>
-                <div class="breakdown-text">Complete: synthetic-data bed availability and dwell-time demonstration.</div>
+                <span class="breakdown-label">Implementation &amp; Demonstration Value</span>
+                <div class="breakdown-text">Repository artifacts include an encounter operations model, data-quality reporting mart, SQL tests, and Power BI source files. Together they show how synthetic healthcare events become reporting data with explicit quality indicators.</div>
               </div>
             </div>
           </article>
@@ -781,7 +784,7 @@
                 </p>
               </div>
               <div class="case-tech-list">
-                <span class="case-tech">Epic Rev Mgmt</span>
+                <span class="case-tech">Rev Mgmt</span>
                 <span class="case-tech">EDI 835/837</span>
                 <span class="case-tech">Scikit-Learn</span>
                 <span class="case-tech">dbt Tests</span>
@@ -797,8 +800,8 @@
                 <div class="breakdown-text">Combines claim attributes and adjudication outcomes with a submission-time feature cutoff to evaluate risk-based review prioritization.</div>
               </div>
               <div class="breakdown-row accent">
-                <span class="breakdown-label">Status &amp; Demonstration Value</span>
-                <div class="breakdown-text">Complete: synthetic claim risk ranking and review prioritization. No improvement in clean-claim rates or write-offs is claimed.</div>
+                <span class="breakdown-label">Implementation &amp; Demonstration Value</span>
+                <div class="breakdown-text">Demonstrates synthetic claim risk ranking and review prioritization. No improvement in clean-claim rates or write-offs is claimed.</div>
               </div>
             </div>
           </article>
@@ -809,10 +812,10 @@
       <div class="master-panel" id="panel-architecture" role="tabpanel">
         <div class="interactive-system">
           <div class="system-nav" role="tablist">
-            <button class="sys-tab active" onclick="switchSysTab(0)" role="tab" aria-selected="true">01 / Synthetic Data &amp; Anomaly Engine</button>
-            <button class="sys-tab" onclick="switchSysTab(1)" role="tab" aria-selected="false">02 / BigQuery Warehouse &amp; dbt</button>
-            <button class="sys-tab" onclick="switchSysTab(2)" role="tab" aria-selected="false">03 / Clinical ML &amp; Leakage Protection</button>
-            <button class="sys-tab" onclick="switchSysTab(3)" role="tab" aria-selected="false">04 / Telemetry &amp; Data Governance</button>
+            <button class="sys-tab active" onclick="switchSysTab(0)" role="tab" aria-selected="true">Synthetic Data &amp; Anomaly Engine</button>
+            <button class="sys-tab" onclick="switchSysTab(1)" role="tab" aria-selected="false">BigQuery Warehouse &amp; dbt</button>
+            <button class="sys-tab" onclick="switchSysTab(2)" role="tab" aria-selected="false">Clinical ML &amp; Leakage Protection</button>
+            <button class="sys-tab" onclick="switchSysTab(3)" role="tab" aria-selected="false">Telemetry &amp; Data Governance</button>
           </div>
 
           <div class="system-content">
@@ -970,11 +973,10 @@
           </p>
           <div class="tech-badges">
             <span class="case-tech">dbt Core</span>
-            <span class="case-tech">BigQuery SQL</span>
-            <span class="case-tech">Apache Airflow</span>
             <span class="case-tech">Python ML</span>
             
             <span class="case-tech">Data quality tests</span>
+            <span class="case-tech">SQL</span>
           </div>
         </div>
         <div class="repo-callout-action">
